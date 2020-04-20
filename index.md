@@ -25,16 +25,16 @@
 		</div>
 	</div>
 
-<div class="checkboxes">
-	<input type="checkbox" id="sahBox" name="sahBox" value="1" onchange="convertBinary('sahBox')">
+<div class="checkboxes" onload="checkboxChange()">
+	<input type="checkbox" id="sahBox" name="sahBox" value="1" onchange="checkboxChange()">
 	<label for="sahBox"> Subarachnoid Hemorrhage </label><br>
-	<input type="checkbox" id="sdhBox" name="sdhBox" value="1" onchange="convertBinary('sdhBox')">
+	<input type="checkbox" id="sdhBox" name="sdhBox" value="1" onchange="checkboxChange()">
 	<label for="sdhBox"> Subdural Hemorrhage </label><br>
-	<input type="checkbox" id="smokerBox" name="smokerBox" value="1" onchange="convertBinary('smokerBox')">
+	<input type="checkbox" id="smokerBox" name="smokerBox" value="1" onchange="checkboxChange()">
 	<label for="smokerBox"> Patient: Smoker</label><br>
-	<input type="checkbox" id="balBox" name="balBox" value="1" onchange="convertBinary('balBox')">
+	<input type="checkbox" id="balBox" name="balBox" value="1" onchange="checkboxChange()">
 	<label for="balBox"> Blood Alcohol Level: Beyond Legal Limits </label><br>
-	<input type="checkbox" id="acsBox" name="acsBox" value="1" onchange="convertBinary('acsBox')">
+	<input type="checkbox" id="acsBox" name="acsBox" value="1" onchange="checkboxChange()">
 	<label for="acsBox"> Facility: ACS Level I</label><br>
 </div>
 

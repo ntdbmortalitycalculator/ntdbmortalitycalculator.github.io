@@ -39,8 +39,12 @@ function sliderChange() {
    calculate()
 }
 
-function convertBinary(id) {
-	document.getElementById(id).value = + document.getElementById(id).checked
+function checkboxChange() {
+	document.getElementById('sahBox').value = + document.getElementById('sahBox').checked
+	document.getElementById('sdhBox').value = + document.getElementById('sdhBox').checked
+	document.getElementById('smokerBox').value = + document.getElementById('smokerBox').checked
+	document.getElementById('balBox').value = + document.getElementById('balBox').checked
+	document.getElementById('acsBox').value = + document.getElementById('acsBox').checked
 	calculate()
 }
 
