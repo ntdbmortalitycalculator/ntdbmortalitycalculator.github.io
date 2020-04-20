@@ -1,6 +1,13 @@
-
+window.onload = function load {
+	checkboxChange();
+	sliderChange();
+}
 
 function calculate() {
+
+	console.log(document.getElementById('gcsVerb').value)
+	console.log(document.getElementById('smokerBox').value)
+
 	var score = document.getElementById('gcsVerb').value * -1.315 +
 	document.getElementById('gcsMot').value * -0.58 +
 	document.getElementById('smokerBox').value * -0.083+

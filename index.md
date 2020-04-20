@@ -1,7 +1,7 @@
 <script src="myscript.js"></script>
-<h1> NTDB Calculator </h1>
+<h1> NTDB Mortality Risk Calculator </h1>
 
-<form action="" id="calc" onsubmit="return false;" onload="sliderChange()">
+<form action="" id="calc" onsubmit="return false;">
 	<div class="sliders">
 		<div class="slidecontainer">
 			<label for="gcsVerb">GCS: Verbal</label><br/>
@@ -25,7 +25,7 @@
 		</div>
 	</div>
 
-<div class="checkboxes" onload="checkboxChange()">
+<div class="checkboxes">
 	<input type="checkbox" id="sahBox" name="sahBox" value="1" onchange="checkboxChange()">
 	<label for="sahBox"> Subarachnoid Hemorrhage </label><br>
 	<input type="checkbox" id="sdhBox" name="sdhBox" value="1" onchange="checkboxChange()">
