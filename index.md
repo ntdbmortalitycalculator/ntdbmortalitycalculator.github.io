@@ -29,7 +29,7 @@
 	  		<output id="issOutput"></output>
 		</div>
 	</div>
-
+<hr>
 <div class="checkboxes">
 	<input type="checkbox" id="sahBox" name="sahBox" value="1" onchange="checkboxChange()">
 	<label for="sahBox"> Subarachnoid Hemorrhage </label><br>
@@ -42,6 +42,8 @@
 	<input type="checkbox" id="acsBox" name="acsBox" value="1" onchange="checkboxChange()">
 	<label for="acsBox"> Facility: ACS Level I</label><br>
 </div>
+
+<hr>
 
 <h2 id="RiskGroup"></h2>
 <h4>Raw score: <text id="score">#</text> </h4>
