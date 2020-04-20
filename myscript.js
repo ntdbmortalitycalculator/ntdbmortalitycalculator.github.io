@@ -31,8 +31,6 @@ function calculate() {
 	else {
 		document.getElementById("RiskGroup").innerHTML = "Grade IV (Predicted Mortality >40%)"
 	}
-
-	document.getElementById("score").innerHTML=score;
 }
 
 function sliderChange() {
