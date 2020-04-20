@@ -18,10 +18,6 @@ function calculate() {
 	document.getElementById("score").innerHTML=score;
 }
 
-Template.myTemplate.rendered = function(){
-	sliderChange()
-}
-
 function sliderChange() {
    var gcsMot = document.getElementById("gcsMot").value //gets the oninput value
    var gcsVerb = document.getElementById("gcsVerb").value
@@ -32,5 +28,9 @@ function sliderChange() {
    document.getElementById('ageOutput').innerHTML = age //displays this value to the html page
    document.getElementById('issOutput').innerHTML = iss //displays this value to the html page
    calculate()
+}
+
+function convertBinary(id) {
+	document.getElementById(id).value = + document.getElementById(id).checked
 }
 

@@ -1,7 +1,7 @@
 <script src="myscript.js"></script>
 <h1> NTDB Calculator </h1>
 
-<form action="" id="calc" onsubmit="return false;">
+<form action="" id="calc" onsubmit="return false;" onload="sliderChange()">
 	<div class="sliders">
 		<div class="slidecontainer">
 			<label for="gcsVerb">GCS: Verbal</label><br/>
@@ -26,19 +26,18 @@
 	</div>
 
 <div class="checkboxes">
-	<input type="checkbox" id="sahBox" name="sahBox" value="SAH" onchange="calculate()">
+	<input type="checkbox" id="sahBox" name="sahBox" value="1" onchange="convertBinary('sahBox')">
 	<label for="sahBox"> Subarachnoid Hemorrhage </label><br>
-	<input type="checkbox" id="sdhBox" name="sdhBox" value="SDH" onchange="calculate()">
+	<input type="checkbox" id="sdhBox" name="sdhBox" value="1" onchange="convertBinary('sdhbox')">
 	<label for="sdhBox"> Subdural Hemorrhage </label><br>
-	<input type="checkbox" id="smokerBox" name="smokerBox" value="Smoker" onchange="calculate()">
+	<input type="checkbox" id="smokerBox" name="smokerBox" value="1" onchange="convertBinary('smokerBox')">
 	<label for="smokerBox"> Patient: Smoker</label><br>
-	<input type="checkbox" id="balBox" name="balBox" value="BAL" onchange="calculate()">
+	<input type="checkbox" id="balBox" name="balBox" value="1" onchange="convertBinary('balBox')">
 	<label for="balBox"> Blood Alcohol Level: Beyond Legal Limits </label><br>
-	<input type="checkbox" id="acsBox" name="acsBox" value="ACS" onchange="calculate()">
+	<input type="checkbox" id="acsBox" name="acsBox" value="1" onchange="convertBinary('acsBox')">
 	<label for="acsBox"> Facility: ACS Level I</label><br>
 </div>
 
-<button onclick="calculate()"> Check </button>
 <h3>"Score is:" + <text id="score">score</text> </h3>
 </form>
 
