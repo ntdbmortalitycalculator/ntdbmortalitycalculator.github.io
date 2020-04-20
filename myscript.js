@@ -9,7 +9,7 @@ function calculate() {
 	document.getElementById('sahBox').value * 0.052 +
 	document.getElementById('sdhBox').value * 0.113 +
 	document.getElementById('age').value * 0.994 +
-	document.getElementById('iss').value * 1.462 +
+	document.getElementById('iss').value * 1.462
 
 	document.getElementById("score").innerHTML=score;
 }
