@@ -8,6 +8,20 @@
   margin-left:15px;
 }
 
+body{
+  margin-left:3%;
+  margin-top:2%;
+}
+
+form {
+  margin-left:2%;
+}
+
+#end{
+  border: 1px solid darkgrey;
+  border-radius:2px;
+}
+
 input[type=range] {
   -webkit-appearance: none;
   width: 30%;

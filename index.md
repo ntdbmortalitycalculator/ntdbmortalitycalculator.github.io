@@ -5,6 +5,7 @@
 </head>
 
 <h1> NTDB Mortality Risk Calculator </h1>
+<hr>
 
 <form action="" id="calc" onsubmit="return false;">
 	<div class="sliders">
@@ -43,7 +44,7 @@
 	<label for="acsBox"> Facility: ACS Level I</label><br>
 </div>
 
-<hr>
+<hr id="end">
 
 <h2 id="RiskGroup"></h2>
 <h4>Raw score: <text id="score">#</text> </h4>
