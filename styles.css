@@ -3,6 +3,14 @@ label {
   font-size: 20px;
 }
 
+hr {
+  margin:15px;
+}
+
+#mid {
+  margin:30px;
+}
+
 .slidecontainer output {
   font-size: 20px;
   margin-left:15px;

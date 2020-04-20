@@ -30,7 +30,7 @@
 	  		<output id="issOutput"></output>
 		</div>
 	</div>
-<hr>
+<hr id="mid">
 <div class="checkboxes">
 	<input type="checkbox" id="sahBox" name="sahBox" value="1" onchange="checkboxChange()">
 	<label for="sahBox"> Subarachnoid Hemorrhage </label><br>
