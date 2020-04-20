@@ -8,23 +8,24 @@ function calculate() {
 	console.log(document.getElementById('gcsVerb').value)
 	console.log(document.getElementById('smokerBox').value)
 
-	var score = document.getElementById('gcsVerb').value * -1.315 +
-	document.getElementById('gcsMot').value * -0.58 +
+	var score = 
+	((document.getElementById('gcsVerb').value - 1)/4) * -1.315 +
+	((document.getElementById('gcsMot').value - 1)/5) * -0.58 +
 	document.getElementById('smokerBox').value * -0.083+
 	document.getElementById('balBox').value * -0.051 +
 	document.getElementById('acsBox').value * -0.022 +
 	document.getElementById('sahBox').value * 0.052 +
 	document.getElementById('sdhBox').value * 0.113 +
-	document.getElementById('age').value * 0.994 +
-	document.getElementById('iss').value * 1.462
+	((document.getElementById('age').value -1)/90) * 0.994 +
+	((document.getElementById('iss').value -1)/75) * 1.462
 
-	if (score<50){
+	if (score<0.5){
 		document.getElementById("RiskGroup").innerHTML = "Grade I (Predicted Mortality < 5%)"
 	}
-	else if (score<100){
+	else if (score<0.75){
 		document.getElementById("RiskGroup").innerHTML = "Grade II (Predicted Mortality 5-15%)"
 	}
-	else if (score<150){
+	else if (score<1.0){
 		document.getElementById("RiskGroup").innerHTML = "Grade III (Predicted Mortality 15-40%)"
 	}
 	else {
