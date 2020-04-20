@@ -1,4 +1,10 @@
-<script src="myscript.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="myscript.js"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
 <h1> NTDB Mortality Risk Calculator </h1>
 
 <form action="" id="calc" onsubmit="return false;">
@@ -42,4 +48,4 @@
 <h4>Raw score: <text id="score">#</text> </h4>
 
 </form>
-
+</html>
