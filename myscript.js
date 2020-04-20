@@ -13,8 +13,24 @@ function calculate() {
 
 	document.getElementById("score").innerHTML=score;
 }
-function updateTextInput(val, id) {
-          document.getElementById(id).value=val; 
-          calculate()
+
+Template.myTemplate.rendered = function(){
+document.getElementById("slider").oninput = function() {
+    myFunction()
+};
+}
+
+function sliderChange() {
+   var gcsMot = document.getElementById("gcsMot").value //gets the oninput value
+   var gcsVerb = document.getElementById("gcsVerb").value
+   var age = document.getElementById("age").value
+   var iss = document.getElementById("iss").value
+   document.getElementById('gcsMotOutput').innerHTML = gcsMot //displays this value to the html page
+   document.getElementById('gcsVerbOutput').innerHTML = gcsVerb //displays this value to the html page
+   document.getElementById('ageOutput').innerHTML = age //displays this value to the html page
+   document.getElementById('issOutput').innerHTML = iss //displays this value to the html page
+   console.log(gcsMot)
+   console.log(gcsVerb)
+   console.log(age)
 }
 

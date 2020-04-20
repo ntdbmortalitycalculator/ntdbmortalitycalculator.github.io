@@ -5,19 +5,23 @@
 	<div class="sliders">
 		<div class="slidecontainer">
 			<label for="gcsVerb">GCS: Verbal</label><br/>
-	  		<input type="range" min="1" max="5" value="5" class="slider" id="gcsVerb" name="gcsVerb" onchange="updateTextInput(this.value, 'textInput');"> <text id="textInput" value="">
+	  		<input type="range" min="1" max="5" value="5" class="slider" id="gcsVerb" name="gcsVerb" onchange="sliderChange()">
+	  		<output id="gcsVerbOutput"></output>
 		</div>
 		<div class="slidecontainer">
 			<label for="gcsMot">GCS: Motor</label><br/>
-	  		<input type="range" min="1" max="6" value="6" class="slider" id="gcsMot" name="gcsMot" onchange="updateTextInput(this.value, 'textInput2');"> <text id="textInput2" value="">
+	  		<input type="range" min="1" max="6" value="6" class="slider" id="gcsMot" name="gcsMot" onchange="sliderChange()"> 
+	  		<output id="gcsMotOutput"></output>
 		</div>
 		<div class="slidecontainer">
 			<label for="age">Age</label><br/>
-	  		<input type="range" min="1" max="90" value="50" class="slider" id="age" name="age" onchange="updateTextInput(this.value, 'textInput3');"> <text id="textInput3" value="">
+	  		<input type="range" min="1" max="90" value="50" class="slider" id="age" name="age" onchange="sliderChange()"> 
+	  		<output id="ageOutput"></output>
 		</div>
 		<div class="slidecontainer">
 			<label for="iss">ISS</label><br/>
-	  		<input type="range" min="1" max="75" value="75" class="slider" id="iss" name="iss" onchange="updateTextInput(this.value, 'textInput4');"> <text id="textInput4" value="">
+	  		<input type="range" min="1" max="75" value="75" class="slider" id="iss" name="iss" onchange="sliderChange()"> 
+	  		<output id="issOutput"></output>
 		</div>
 	</div>
 
