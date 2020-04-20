@@ -1,6 +1,11 @@
-.slide-container label {
-  font-weight:500;
-  font-size: 18px;
+.slidecontainer label {
+  font-weight:600;
+  font-size: 24px;
+}
+
+.slidecontainer output {
+  font-size: 20px;
+  margin-left:15px;
 }
 
 input[type=range] {
