@@ -28,7 +28,7 @@
 <div class="checkboxes">
 	<input type="checkbox" id="sahBox" name="sahBox" value="1" onchange="convertBinary('sahBox')">
 	<label for="sahBox"> Subarachnoid Hemorrhage </label><br>
-	<input type="checkbox" id="sdhBox" name="sdhBox" value="1" onchange="convertBinary('sdhbox')">
+	<input type="checkbox" id="sdhBox" name="sdhBox" value="1" onchange="convertBinary('sdhBox')">
 	<label for="sdhBox"> Subdural Hemorrhage </label><br>
 	<input type="checkbox" id="smokerBox" name="smokerBox" value="1" onchange="convertBinary('smokerBox')">
 	<label for="smokerBox"> Patient: Smoker</label><br>
@@ -39,7 +39,7 @@
 </div>
 
 <h2 id="RiskGroup"></h2>
-<h4>Raw score: + <text id="score">#</text> </h3>
+<h4>Raw score: <text id="score">#</text> </h4>
 
 </form>
 
