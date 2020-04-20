@@ -1,5 +1,10 @@
-var score = x;
+
 
 function calculate() {
-	score = 95;
+	document.getElementById("score").innerHTML=95;
 }
+function updateTextInput(val) {
+          document.getElementById('textInput').value=val; 
+          calculate()
+        }
+
