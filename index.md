@@ -4,7 +4,7 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<h1> NTDB Mortality Risk Calculator </h1>
+<h1> NTDB tICH Mortality Risk Calculator </h1>
 <hr>
 
 <form action="" id="calc" onsubmit="return false;">
@@ -48,5 +48,4 @@
 <hr id="end">
 
 <h2 id="RiskGroup"></h2>
-<h4>Raw score: <text id="score">#</text> </h4>
 </html>
