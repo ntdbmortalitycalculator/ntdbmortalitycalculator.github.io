@@ -11,9 +11,18 @@ function calculate() {
 	document.getElementById('age').value * 0.994 +
 	document.getElementById('iss').value * 1.462
 
-    console.log(document.getElementById('balBox').value)
-    console.log(document.getElementById('sahBox').value)
-    console.log(document.getElementById('gcsVerb').value)
+	if (score<50){
+		document.getElementById("RiskGroup").innerHTML = "Grade I (Predicted Mortality < 5%)"
+	}
+	else if (score<100){
+		document.getElementById("RiskGroup").innerHTML = "Grade II (Predicted Mortality 5-15%)"
+	}
+	else if (score<150){
+		document.getElementById("RiskGroup").innerHTML = "Grade III (Predicted Mortality 15-40%)"
+	}
+	else {
+		document.getElementById("RiskGroup").innerHTML = "Grade IV (Predicted Mortality >40%)"
+	}
 
 	document.getElementById("score").innerHTML=score;
 }
@@ -32,5 +41,6 @@ function sliderChange() {
 
 function convertBinary(id) {
 	document.getElementById(id).value = + document.getElementById(id).checked
+	calculate()
 }
 
