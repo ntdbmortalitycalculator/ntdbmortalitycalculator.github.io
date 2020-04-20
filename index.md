@@ -21,7 +21,7 @@
 		</div>
 		<div class="slidecontainer">
 			<label for="age">Age</label><br/>
-	  		<input type="range" min="1" max="90" value="50" class="slider" id="age" name="age" onchange="sliderChange()"> 
+	  		<input type="range" min="0" max="90" value="50" class="slider" id="age" name="age" onchange="sliderChange()"> 
 	  		<output id="ageOutput"></output>
 		</div>
 		<div class="slidecontainer">

@@ -8,12 +8,16 @@ hr {
 }
 
 #mid {
-  margin:30px 20px 15px 30px;
+  margin:20px 40px 15px 30px;
 }
 
 .slidecontainer output {
   font-size: 20px;
   margin-left:15px;
+}
+
+.checkboxes input {
+  margin-bottom:12px;
 }
 
 body{

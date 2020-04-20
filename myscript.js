@@ -16,7 +16,7 @@ function calculate() {
 	document.getElementById('acsBox').value * -0.022 +
 	document.getElementById('sahBox').value * 0.052 +
 	document.getElementById('sdhBox').value * 0.113 +
-	((document.getElementById('age').value -1)/89) * 0.994 +
+	((document.getElementById('age').value)/90) * 0.994 +
 	((document.getElementById('iss').value -1)/74) * 1.462
 
 	if (score<0.5){
