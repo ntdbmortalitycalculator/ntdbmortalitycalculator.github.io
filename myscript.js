@@ -1,4 +1,4 @@
-window.onload = function load {
+window.onload = (event) => {
 	checkboxChange();
 	sliderChange();
 }
