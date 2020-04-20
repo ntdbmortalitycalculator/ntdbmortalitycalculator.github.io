@@ -4,7 +4,7 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<h1> NTDB tICH Mortality Risk Calculator </h1>
+<h2> NTDB tICH Mortality Risk Calculator </h1>
 <hr>
 
 <form action="" id="calc" onsubmit="return false;">
