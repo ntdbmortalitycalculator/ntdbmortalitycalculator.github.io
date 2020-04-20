@@ -11,13 +11,15 @@ function calculate() {
 	document.getElementById('age').value * 0.994 +
 	document.getElementById('iss').value * 1.462
 
+    console.log(document.getElementById('balBox').value)
+    console.log(document.getElementById('sahBox').value)
+    console.log(document.getElementById('gcsVerb').value)
+
 	document.getElementById("score").innerHTML=score;
 }
 
 Template.myTemplate.rendered = function(){
-document.getElementById("slider").oninput = function() {
-    myFunction()
-};
+	sliderChange()
 }
 
 function sliderChange() {
@@ -29,8 +31,6 @@ function sliderChange() {
    document.getElementById('gcsVerbOutput').innerHTML = gcsVerb //displays this value to the html page
    document.getElementById('ageOutput').innerHTML = age //displays this value to the html page
    document.getElementById('issOutput').innerHTML = iss //displays this value to the html page
-   console.log(gcsMot)
-   console.log(gcsVerb)
-   console.log(age)
+   calculate()
 }
 
