@@ -1,7 +1,7 @@
 
 
 function calculate() {
-	score = document.getElementById('gcsVerb').value * -1.315 +
+	var score = document.getElementById('gcsVerb').value * -1.315 +
 	document.getElementById('gcsMot').value * -0.58 +
 	document.getElementById('smokerBox').value * -0.083+
 	document.getElementById('balBox').value * -0.051 +
