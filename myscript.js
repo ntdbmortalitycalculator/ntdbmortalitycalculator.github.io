@@ -13,8 +13,8 @@ function calculate() {
 
 	document.getElementById("score").innerHTML=score;
 }
-function updateTextInput(val) {
-          document.getElementById('textInput').value=val; 
+function updateTextInput(val, id) {
+          document.getElementById(id).value=val; 
           calculate()
 }
 
