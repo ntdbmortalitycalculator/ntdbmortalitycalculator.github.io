@@ -44,10 +44,9 @@
 	<label for="acsBox"> Facility: ACS Level I</label><br>
 </div>
 
+</form>
 <hr id="end">
 
 <h2 id="RiskGroup"></h2>
 <h4>Raw score: <text id="score">#</text> </h4>
-
-</form>
 </html>
