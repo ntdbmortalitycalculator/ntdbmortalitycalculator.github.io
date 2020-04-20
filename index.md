@@ -1,6 +1,40 @@
+<script src="myscript.js"></script>
 <h1> NTDB Calculator </h1>
 
-<h3> test 3 </h3>
-<div class="slidecontainer">
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+<form action="" id="calc" onsubmit="return false;">
+	<div class="sliders">
+		<div class="slidecontainer">
+			<label for="gcsVerb">GCS: Verbal</label>
+	  		<input type="range" min="1" max="5" value="5" class="slider" id="gcsVerb" name="gcsVerb">
+		</div>
+		<div class="slidecontainer">
+			<label for="gcsMot">GCS: Motor</label>
+	  		<input type="range" min="1" max="6" value="6" class="slider" id="gcsMot" name="gcsMot">
+		</div>
+		<div class="slidecontainer">
+			<label for="age">Age</label>
+	  		<input type="range" min="1" max="90" value="50" class="slider" id="age" name="age">
+		</div>
+		<div class="slidecontainer">
+			<label for="iss">ISS</label>
+	  		<input type="range" min="1" max="75" value="75" class="slider" id="iss" name="iss">
+		</div>
+	</div>
+
+<div class="checkboxes">
+	<input type="checkbox" id="sahBox" name="sahBox" value="SAH">
+	<label for="sahBox"> Subarachnoid Hemorrhage </label><br>
+	<input type="checkbox" id="sdhBox" name="sdhBox" value="SDH">
+	<label for="sdhBox"> Subdural Hemorrhage </label><br>
+	<input type="checkbox" id="smokerBox" name="smokerBox" value="Smoker">
+	<label for="smokerBox"> Patient: Smoker</label><br>
+	<input type="checkbox" id="balBox" name="balBox" value="BAL">
+	<label for="balBox"> Blood Alcohol Level: Beyond Legal Limits </label><br>
+	<input type="checkbox" id="acsBox" name="acsBox" value="ACS">
+	<label for="acsBox"> Facility: ACS Level I</label><br>
 </div>
+
+<button onclick="calculate()"> Check </button>
+<h3>"Score is:" + score </h3>
+</form>
+
