@@ -1,6 +1,11 @@
+.slide-container label {
+  font-weight:500;
+  font-size: 18px;
+}
+
 input[type=range] {
   -webkit-appearance: none;
-  width: 100%;
+  width: 30%;
   margin: 4.9px 0;
 }
 input[type=range]:focus {
