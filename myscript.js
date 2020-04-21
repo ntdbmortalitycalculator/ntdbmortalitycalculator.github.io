@@ -19,13 +19,13 @@ function calculate() {
 	((document.getElementById('age').value)/90) * 0.994 +
 	((document.getElementById('iss').value -1)/74) * 1.462
 
-	if (score<0.5){
+	if (score<0.1){
 		document.getElementById("RiskGroup").innerHTML = "Grade I (Predicted Mortality < 5%)"
 	}
-	else if (score<0.75){
+	else if (score<0.3){
 		document.getElementById("RiskGroup").innerHTML = "Grade II (Predicted Mortality 5-15%)"
 	}
-	else if (score<1.0){
+	else if (score<0.8){
 		document.getElementById("RiskGroup").innerHTML = "Grade III (Predicted Mortality 15-40%)"
 	}
 	else {
