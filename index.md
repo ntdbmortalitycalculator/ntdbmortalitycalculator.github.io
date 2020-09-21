@@ -5,6 +5,7 @@
 </head>
 
 <h1> NTDB tICH Mortality Risk Calculator </h1>
+<span>Warning: This calculator was created solely using the NTDB, and its prognostic ability is therefore limited by the type of data available in the database. Over 30 relevant clinical factors were evaluated in the creation of this calculator, but due to the structure of the database, other important factors, such as the time to treatment and types of interventions, could not be considered for each patient.</span>
 <hr>
 
 <form action="" id="calc" onsubmit="return false;">
